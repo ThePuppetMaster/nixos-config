@@ -32,7 +32,7 @@ in
         foreground-color-2 = mkLiteral "#f38ba8";
         grey = mkLiteral "#6c7086";
         width = 600;
-        #font = mkLiteral "JetBrainsMono Nerd Font 14";
+        font = "JetBrainsMono Nerd Font 14";
       };
 
       window = {
