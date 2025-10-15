@@ -1,7 +1,7 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs ... }:
 
 let
-  mkLiteral = lib.formats.rasi.mkLiteral;
+  inherit (config.lib.formats.rasi) mkLiteral;
 in
 {
   programs.rofi = {
