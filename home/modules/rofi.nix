@@ -7,20 +7,18 @@ in
   programs.rofi = {
     enable = true;
     extraConfig = {
-      configuration = {
-        modi = mkLiteral "run,drun,window";
-        icon-theme = mkLiteral "Colloid-Catppuccin-Dark";
+        modi = "run,drun,window";
+        icon-theme = "Colloid-Catppuccin-Dark";
         show-icons = true;
-        terminal = mkLiteral "kitty";
-        drun-display-format = mkLiteral "{icon} {name}";
+        terminal = "kitty";
+        drun-display-format = "{icon} {name}";
         location = 0;
         disable-history = false;
         hide-scrollbar = true;
-        display-drun = mkLiteral "   Launch ";
-        display-run = mkLiteral "   Run ";
-        display-window = mkLiteral "   Window";
+        display-drun = "   Launch ";
+        display-run = "   Run ";
+        display-window = "   Window";
         sidebar-mode = true;
-      };
     };
 
     theme = {
