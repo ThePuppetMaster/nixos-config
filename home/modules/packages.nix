@@ -6,9 +6,10 @@
     cliphist
     colloid-icon-theme
     libnotify
-    nerd-fonts-jetbrains-mono
     zed-editor
 
     kdePackages.dolphin
+
+    nerd-fonts.jetbrains-mono
   ];
 }
