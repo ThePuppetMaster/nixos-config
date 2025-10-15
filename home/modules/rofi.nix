@@ -1,4 +1,4 @@
-{ config, pkgs ... }:
+{ config, pkgs, ... }:
 
 let
   inherit (config.lib.formats.rasi) mkLiteral;
@@ -64,7 +64,7 @@ in
 
       textbox-prompt-colon = {
         expand = false;
-        str = mkLiteral ":";
+        str = ":";
       };
 
       entry = {
