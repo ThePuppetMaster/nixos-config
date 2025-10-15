@@ -35,6 +35,21 @@ in
         font = "JetBrainsMono Nerd Font 14";
       };
 
+      element-text = {
+        background-color = mkLiteral "inherit";
+        text-color = mkLiteral "inherit";
+      };
+
+      element-icon = {
+        background-color = mkLiteral "inherit";
+        text-color = mkLiteral "inherit";
+      };
+
+      mode-switcher = {
+        background-color = mkLiteral "inherit";
+        text-color = mkLiteral "inherit";
+      };
+
       window = {
         height = 360;
         border = 2;
