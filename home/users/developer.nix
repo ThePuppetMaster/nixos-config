@@ -15,6 +15,7 @@
     ../modules/kitty.nix
     ../modules/mako.nix
     ../modules/packages.nix
+    ../modules/rofi.nix
     ../modules/starship.nix
     ../modules/hypr/hyprland.nix
   ];

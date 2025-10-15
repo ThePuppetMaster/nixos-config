@@ -6,7 +6,6 @@
     cliphist
     colloid-icon-theme
     libnotify
-    rofi
     zed-editor
 
     kdePackages.dolphin
