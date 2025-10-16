@@ -4,7 +4,11 @@
   home.username = "developer";
   home.homeDirectory = "/home/developer";
 
-  #home.file = {};
+  home.file = {
+    ".background".source = ../assets/developer/background.png;
+    ".face".source = ../assets/developer/face.png;
+    ".config/hypr/catppuccin-macchiato-theme.conf".source = ../assets/developer/hyprland/catppuccin-macchiato-theme.conf;
+  };
 
   home.sessionVariables = {
     EDITOR = "vim";
@@ -20,6 +24,7 @@
     ../modules/starship.nix
 
     ../modules/hypr/hyprland.nix
+    ../modules/hypr/hyprlock.nix
     ../modules/hypr/packages.nix
   ];
 
