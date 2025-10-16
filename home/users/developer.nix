@@ -17,7 +17,9 @@
     ../modules/packages.nix
     ../modules/rofi.nix
     ../modules/starship.nix
+
     ../modules/hypr/hyprland.nix
+    ../modules/hypr/packages.nix
   ];
 
   # You should not change this value, even if you update Home Manager. If you do
