@@ -24,7 +24,7 @@
     ../modules/starship.nix
 
     ../modules/hypr/hyprland.nix
-    ../modules/hypr/hyprlock.nix
+    #../modules/hypr/hyprlock.nix # No point using it in VM without 3d acceleration.
     ../modules/hypr/packages.nix
   ];
 
