@@ -6,7 +6,8 @@
     cliphist
     colloid-icon-theme
     libnotify
-    zed-editor
+    #zed-editor
+    vscodium
 
     kdePackages.dolphin
 
