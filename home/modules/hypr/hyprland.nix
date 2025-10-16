@@ -44,7 +44,7 @@
         inactive_opacity = 1.0;
 
         shadow = {
-          enabled = true;
+          enabled = false; # VM
 
           range = 4;
           render_power = 3;
@@ -60,7 +60,7 @@
         };
       };
       animations = {
-        enabled = true;
+        enabled = false; # VM
 
         # Default curves.
         #                  X0,   Y0,   X1,   Y1
@@ -104,6 +104,7 @@
       misc = {
         force_default_wallpaper = -1; # Set to 0 or 1 to disable the anime mascot wallpapers.
         disable_hyprland_logo = false; # If true disables the random hyprland logo / anime girl background. :(
+        vfr = true; # VM
       };
 
       # Disable update info dialog.
