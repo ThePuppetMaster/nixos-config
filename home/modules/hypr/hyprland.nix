@@ -146,8 +146,14 @@
         "$mainMod, R, exec, rofi -show drun"
         "$mainMod, T, exec, kitty"
         "$mainMod, B, exec, brave"
+        "$mainMod, E, exec, codium"
         "$mainMod, F, exec, dolphin"
         "$mainMod, C, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy"
+
+        # Screenshots.
+        ", PRINT, exec, hyprshot -m output"
+        "$mainMod, PRINT, exec, hyprshot -m window"
+        "$shiftMod, PRINT, exec, hyprshot -m region"
 
         # Window management types.
         "$mainMod, V, togglefloating"
