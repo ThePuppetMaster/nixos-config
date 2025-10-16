@@ -19,7 +19,7 @@
       exec-once = [];
 
       # Monitors.
-      monitor = [ ", 1368x768@59, 0x0 , 1" ];
+      monitor = [ ", 1920x1080@59, 0x0 , 1" ];
 
       # Look & Feel.
       general = {
