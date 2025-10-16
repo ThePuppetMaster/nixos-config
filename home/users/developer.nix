@@ -12,6 +12,7 @@
 
   imports = [
     ../modules/bash.nix
+    ../modules/cliphist.nix
     ../modules/kitty.nix
     ../modules/mako.nix
     ../modules/packages.nix
