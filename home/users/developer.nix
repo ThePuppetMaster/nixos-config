@@ -25,6 +25,7 @@
 
     ../modules/hypr/hyprland.nix
     #../modules/hypr/hyprlock.nix # Breaks while using in VM without 3d acceleration.
+    ../modules/hypr/hyprpaper.nix
     ../modules/hypr/packages.nix
   ];
 
