@@ -7,17 +7,20 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    hyprqt6engine.url = "github:hyprwm/hyprqt6engine";
   };
 
   outputs =
-    { nixpkgs, home-manager, ... }:
+    { nixpkgs, home-manager, hyprqt6engine, ... }:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
+      hyprqt6enginePackages = hyprqt6engine.packages.${system};
     in
     {
       homeConfigurations.vm = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
+        extraSpecialArgs = { inherit hyprqt6enginePackages; };
 
         modules = [ ./users/developer.nix ];
 

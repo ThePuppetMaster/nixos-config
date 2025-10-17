@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, hyprqt6enginePackages, ... }:
 
 {
   home.username = "developer";
