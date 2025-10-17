@@ -6,5 +6,6 @@
     git
     home-manager
     vim
+    xdg-user-dirs
   ];
 }
