@@ -6,6 +6,4 @@
     withUWSM = true;
     xwayland.enable = true;
   };
-
-  services.hypridle.enable = true;
 }
