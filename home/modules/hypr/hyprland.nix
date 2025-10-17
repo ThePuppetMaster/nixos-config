@@ -1,6 +1,9 @@
 { config, pkgs, ... }:
 
 {
+  # Color theme for Hypr* ecosystem.
+  home.file.".config/hypr/hypr-theme.conf".source = ../../assets/developer/hyprland/hypr-theme.conf;
+
   wayland.windowManager.hyprland = {
     enable = true;
 

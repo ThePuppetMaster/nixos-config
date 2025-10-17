@@ -7,7 +7,6 @@
   home.file = {
     ".background".source = ../assets/developer/background.png;
     ".face".source = ../assets/developer/face.png;
-    ".config/hypr/catppuccin-macchiato-theme.conf".source = ../assets/developer/hyprland/catppuccin-macchiato-theme.conf;
   };
 
   home.sessionVariables = {

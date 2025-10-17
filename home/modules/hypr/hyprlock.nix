@@ -5,7 +5,7 @@
     enable = true;
     sourceFirst = true;
     settings = {
-      source = "$HOME/.config/hypr/catppuccin-macchiato-theme.conf";
+      source = "$HOME/.config/hypr/hypr-theme.conf"; # Installed by hyprland.nix module.
 
       general = {
         hide_cursor = true;
