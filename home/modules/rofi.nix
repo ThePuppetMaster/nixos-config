@@ -8,7 +8,7 @@ in
     enable = true;
     extraConfig = {
         modi = "run,drun,window";
-        icon-theme = "Colloid-Catppuccin-Dark";
+        icon-theme = "Colloid-Dark";
         show-icons = true;
         terminal = "kitty";
         drun-display-format = "{icon} {name}";
