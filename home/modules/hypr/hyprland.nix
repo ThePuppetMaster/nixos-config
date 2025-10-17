@@ -16,7 +16,11 @@
       ];
 
       # Autostart.
-      exec-once = [];
+      exec-once = [
+        # Clipboard management.
+        "wl-paste --type text --watch cliphist store"
+        "wl-paste --type image --watch cliphist store"
+      ];
 
       # Monitors.
       monitor = [ ", 1920x1080@59, 0x0 , 1" ];
