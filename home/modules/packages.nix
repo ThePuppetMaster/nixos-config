@@ -7,6 +7,7 @@
     libnotify
     #zed-editor
     vscodium
+    xdg-user-dirs
 
     kdePackages.dolphin
 

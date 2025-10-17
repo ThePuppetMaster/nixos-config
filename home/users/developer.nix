@@ -25,6 +25,7 @@
 
     ../modules/hypr/hyprland.nix
     ../modules/hypr/hyprpaper.nix
+    ../modules/hypr/hyprshot.nix
     ../modules/hypr/packages.nix
   ];
 
