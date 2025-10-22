@@ -84,7 +84,7 @@
         };
       };
       animations = {
-        enabled = false; # VM
+        enabled = true;
 
         # Default curves.
         #                  X0,   Y0,   X1,   Y1

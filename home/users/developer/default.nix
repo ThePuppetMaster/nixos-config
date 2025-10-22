@@ -26,8 +26,9 @@
   ];
 
   # ../../modules/hyprland/default.nix override
-  wayland.windowManager.hyprland = {
-    settings.decoration.shadow.enabled = lib.mkForce false;
+  wayland.windowManager.hyprland = with lib; {
+    settings.decoration.shadow.enabled = mkForce false;
+    settings.animations.enabled = mkForce false;
   };
 
   # You should not change this value, even if you update Home Manager. If you do
