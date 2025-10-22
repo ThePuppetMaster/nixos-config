@@ -1,4 +1,4 @@
-{ config, pkgs, hyprqt6enginePackages, ... }:
+{ config, lib, pkgs, hyprqt6enginePackages, ... }:
 
 {
   home.username = "developer";
@@ -24,6 +24,11 @@
     ../../modules/hyprland/programs/hyprlock.nix
     ../../modules/hyprland/services/hypridle.nix
   ];
+
+  # ../../modules/hyprland/default.nix override
+  wayland.windowManager.hyprland = {
+    settings.decoration.shadow.enabled = lib.mkForce false;
+  };
 
   # You should not change this value, even if you update Home Manager. If you do
   # want to update the value, then make sure to first check the Home Manager

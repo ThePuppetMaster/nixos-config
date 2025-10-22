@@ -68,7 +68,7 @@
         inactive_opacity = 1.0;
 
         shadow = {
-          enabled = false; # VM
+          enabled = true;
 
           range = 4;
           render_power = 3;
