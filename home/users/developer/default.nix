@@ -5,8 +5,8 @@
   home.homeDirectory = "/home/developer";
 
   home.file = {
-    ".background".source = ../assets/developer/background.png;
-    ".face".source = ../assets/developer/face.png;
+    ".background".source = ./assets/background.png;
+    ".face".source = ./assets/face.png;
   };
 
   home.sessionVariables = {
@@ -14,18 +14,15 @@
   };
 
   imports = [
-    ../modules/bash.nix
-    ../modules/cliphist.nix
-    ../modules/kitty.nix
-    ../modules/mako.nix
-    ../modules/packages.nix
-    ../modules/rofi.nix
-    ../modules/starship.nix
+    ../../modules/hyprland/default.nix
+    ../../modules/programs/default.nix
+    ../../modules/services/default.nix
+    ../../modules/shell/default.nix
+  ];
 
-    ../modules/hypr/hyprland.nix
-    ../modules/hypr/hyprpaper.nix
-    ../modules/hypr/hyprshot.nix
-    ../modules/hypr/packages.nix
+  disabledModules = [
+    ../../modules/hyprland/programs/hyprlock.nix
+    ../../modules/hyprland/services/hypridle.nix
   ];
 
   # You should not change this value, even if you update Home Manager. If you do

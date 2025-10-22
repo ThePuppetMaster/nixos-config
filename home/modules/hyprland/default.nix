@@ -2,7 +2,7 @@
 
 {
   # Color theme for Hypr* ecosystem.
-  home.file.".config/hypr/hypr-theme.conf".source = ../../assets/developer/hyprland/hypr-theme.conf;
+  home.file.".config/hypr/hypr-theme.conf".source = ./assets/hypr-theme.conf;
 
   wayland.windowManager.hyprland = {
     enable = true;
@@ -242,4 +242,9 @@
       ];
     };
   };
+
+  imports = [
+    ./programs/default.nix
+    ./services/default.nix
+  ];
 }

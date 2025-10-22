@@ -22,7 +22,7 @@
         inherit pkgs;
         extraSpecialArgs = { inherit hyprqt6enginePackages; };
 
-        modules = [ ./users/developer.nix ];
+        modules = [ ./users/developer/default.nix ];
 
         # Optionally use extraSpecialArgs
         # to pass through arguments to home.nix

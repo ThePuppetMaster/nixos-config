@@ -1,6 +1,7 @@
 { pkgs, ... }:
 
 {
+  # TODO brake into submodules (?)
   home.packages = with pkgs; [
     brave
     colloid-icon-theme
