@@ -1,6 +1,24 @@
 { config, pkgs, ... }:
 
 {
+  home.file.".config/uwsm/env".text = 
+    ''
+      export XCURSOR_SIZE=24
+
+      export GDK_BACKEND=wayland,x11,*
+      export QT_QPA_PLATFORM=wayland;xcb
+      export QT_AUTO_SCREEN_SCALE_FACTOR=1
+      export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+      export SDL_VIDEODRIVER=wayland
+      export CLUTTER_BACKEND=wayland
+
+      export XDG_CURRENT_DESKTOP=Hyprland
+      export XDG_SESSION_TYPE=wayland
+      export XDG_SESSION_DESKTOP=Hyprland
+    '';
+  
+  home.file.".config/uwsm/env-hyprland".text = "export HYPRCURSOR_SIZE=24";
+
   # Color theme for Hypr* ecosystem.
   home.file.".config/hypr/hypr-theme.conf".source = ./assets/hypr-theme.conf;
 
@@ -12,29 +30,6 @@
     portalPackage = null;
 
     settings = {
-      # Environment variables.
-      env = [
-        # Cursor.
-        "XCURSOR_SIZE,24"
-        "HYPRCURSOR_SIZE,24"
-
-        # Toolkits.
-        "GDK_BACKEND,wayland,x11,*"
-        "QT_QPA_PLATFORM,wayland;xcb"
-        "SDL_VIDEODRIVER,wayland"
-        "CLUTTER_BACKEND,wayland"
-
-        # XDG.
-        "XDG_CURRENT_DESKTOP,Hyprland"
-        "XDG_SESSION_TYPE,wayland"
-        "XDG_SESSION_DESKTOP,Hyprland"
-
-        # Qt.
-        "QT_AUTO_SCREEN_SCALE_FACTOR,1"
-        "QT_QPA_PLATFORM,wayland;xcb"
-        "QT_WAYLAND_DISABLE_WINDOWDECORATION,1"
-      ];
-
       # Autostart.
       exec-once = [
         # Clipboard management.
