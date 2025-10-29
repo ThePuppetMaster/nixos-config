@@ -18,6 +18,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # Theming framework that applies color schemes, wallpapers, and fonts
+    # to a wide range of applications.
     stylix = {
       url = "github:nix-community/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -57,8 +59,9 @@
   {
     # Used with `nixos-rebuild --flake .#<hostname>`
     nixosConfigurations.vm = nixpkgs.lib.nixosSystem {
-      specialArgs = { inherit mylib stylix; };
+      specialArgs = { inherit mylib; };
       modules = [
+        stylix.nixosModules.stylix
         ./hosts/vm/configuration.nix
         ./modules/base
 
