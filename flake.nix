@@ -64,11 +64,14 @@
         stylix.nixosModules.stylix
         ./hosts/vm/configuration.nix
         ./modules/base
+        ./modules/extra
 
         # Makes home-manager a module of nixos so that home-manager
         # configuration will be deployed automatically when executing
         # `nixos-rebuild switch`.
         home-manager.nixosModules.home-manager {
+          nixpkgs.pkgs = pkgs;
+
           home-manager.extraSpecialArgs = { inherit mylib; };
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;

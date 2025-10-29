@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   home = {
@@ -24,4 +24,16 @@
     ../../modules/base
     ../../modules/extra
   ];
+
+  disabledModules = [
+    ../../modules/base/services/hypridle.nix
+  ];
+
+  # ../../modules/base/programs/hyprland.nix override
+  wayland.windowManager.hyprland = with lib; {
+    settings = {
+      decoration.shadow.enabled = mkForce false;
+      animations.enabled = mkForce false;
+    };
+  };
 }
