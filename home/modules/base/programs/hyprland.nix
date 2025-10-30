@@ -25,8 +25,8 @@
         border_size = 2;
         resize_on_border = false;
 
-        "col.active_border" = "rgba(33ccffee) rgba(00ff99ee) 45deg";
-        "col.inactive_border" = "rgba(595959aa)";
+        #"col.active_border" = "rgba(33ccffee) rgba(00ff99ee) 45deg";
+        #"col.inactive_border" = "rgba(595959aa)";
 
         allow_tearing = false;
 
@@ -44,7 +44,7 @@
 
           range = 4;
           render_power = 3;
-          color = "rgba(1a1a1aee)";
+          #color = "rgba(1a1a1aee)";
         };
 
         blur = {
@@ -222,6 +222,7 @@
 
       export GDK_BACKEND=wayland,x11,*
       export QT_QPA_PLATFORM=wayland;xcb
+      export QT_QPA_PLATFORMTHEME=hyprqt6engine
       export QT_AUTO_SCREEN_SCALE_FACTOR=1
       export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
       export SDL_VIDEODRIVER=wayland

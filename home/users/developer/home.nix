@@ -21,6 +21,8 @@
   };
 
   imports = [
+    ../../config
+
     ../../modules/base
     ../../modules/extra
   ];
